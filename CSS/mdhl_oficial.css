@@ -1,0 +1,718 @@
+@font-face {
+    font-family: anton;
+    src: url(../assets/font/Anton-Regular.ttf);
+}
+@font-face {
+    font-family: russo;
+    src: url(../assets/font/RussoOne-Regular.ttf);
+}
+@font-face {
+    font-family: saira;
+    src: url(../assets/font/SairaCondensed-Regular.ttf);
+}
+
+:root{
+    --nav-bar: 16vw ;
+    --width-pag: 100vw;
+    --borde-header: 1rem;
+    --width-rules: 50vw;
+    --background-body: rgb(59, 46, 46);
+    --background: rgb(168, 162, 162);
+}
+
+/* NORMALIZACION DEL LIENZO */
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 90vw;
+    min-height: 30vh;
+    background-color: bisque;
+    background-image: url(/assets/hockey-google-4.jpg);
+    background-position: center;
+    border-bottom: var(--borde-header) solid black;
+}
+
+#main-index-1{
+    display: flex;
+    min-height: 85vh;
+    min-width: 84vw;
+    background-color: var(--background-body);
+}
+#main-index-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+    padding: 6rem;
+}
+#main-about-1{
+    display: flex;
+    min-height: 200vh;
+    min-width: 84vw;
+    background-color: var(--background-body);
+}
+#main-about-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+    gap: 6rem;
+}
+#main-contact-1{
+    display: flex;
+    min-height: 85vh;
+    min-width: 84vw;
+    background-color: var(--background-body);
+}
+#main-contact-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+    margin: 2rem;
+    padding: 6rem;
+}
+#main-gameInfo-1{
+    display: flex;
+    min-height: 140vh;
+    min-width: 84vw;
+    background-color: var(--background-body);
+}
+#main-gameInfo-2{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding: 6rem;
+}
+#main-rules-1{
+    display: flex;
+    min-height: 150vh;
+    min-width: 84vw;
+    background-color: rgb(59, 46, 46);
+}
+#main-rules-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    border: 2px solid black;
+    margin: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 40px 0px black;
+    background-color: rgb(0, 0, 0);
+    gap: 4rem;
+    min-width: var(--width-rules);
+    color: white;
+    padding: 6rem;
+}
+#main-registration-1{
+    display: flex;
+    min-height: 85vh;
+    min-width: 84vw;
+    background-color: var(--background-body);
+}
+#main-registration-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+    padding: 6rem;
+    gap: 4rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 90vw;
+    min-height: 6vh;
+    background-color: rgb(168, 162, 162);
+}
+
+/* MOBILE NAVBAR */
+nav, nav>div{
+    display: flex;
+    width: 14rem;
+    flex-direction: column;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+nav a{
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgb(66, 18, 18);
+    padding: 1em;
+    text-decoration: none;
+    font-family: saira;
+    font-size: 1.2rem;
+}
+nav a:hover{
+    background-color: rgb(54, 8, 8);
+}
+nav a[href="#"]{
+    background-color: rgb(54, 8, 8);
+    text-shadow: 0em 0em .2em orange,0em 0em .8em orange;
+}
+
+#logo-index{
+    display: flex;
+    width: 10rem;   
+    position: relative; left: 83vw;
+}
+.logo{
+    display: flex;
+    width: 10rem;   
+    position: relative; left: 83vw;
+}
+
+.hockeyKid{
+    width: 40rem;
+}
+.hockeyKid-index{
+    max-width: 51.8vw;
+    min-height: 70vh;
+}
+.hockeyKid:hover{
+    box-shadow: 0px 0px 40px 0px black;
+}
+#hockeyKid-contact-1{
+    position: relative; top: -5vh;
+}
+
+.header-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.calendario{
+    opacity: 0;
+}
+
+.seccion-nav{
+    padding: 1rem;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    font-family: saira;
+    text-decoration: underline;
+}
+
+.about-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 40vw;
+}
+
+#rules{
+    min-width: 50vw;
+    font-size: 1.5rem;
+}
+#rules-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 1rem;
+    font-size: 2.5rem;
+}
+#rules-header{
+    min-width: var(--width-rules);
+}
+#rules-body-1{
+    min-width: var(--width-rules);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+#rules-body-2{
+    min-width: var(--width-rules);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#rules-body-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: var(--width-rules);
+}
+
+.subtitulo{
+    font-size: 2rem;
+    text-decoration: underline ;
+    gap: 3rem;
+}
+
+#galeria{
+    display: flex;
+    max-width: 51.8vw;
+    overflow-x: auto;
+    object-fit: cover;
+    border: 2px solid white;
+    box-shadow: 0 0 20px 0 orange,0 0 20px 0 orange;
+}
+.date{
+    font-size: 2.5rem;
+    font-family: russo;
+}
+.date-text{
+    font-size: 1.5rem;
+}
+.div-date{
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: rgb(168, 162, 162);
+}
+#div-date-1,#div-date-2,#div-date-3{
+    display: flex;
+    flex-direction: column;
+}
+#navegacion{
+    display: flex;
+    font-family: russo;
+    display: none;
+}
+#navegacion li{
+    list-style: none;
+    background-color: grey;
+    min-width: 2rem;
+    min-height: 2rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navegacion li a{
+    text-decoration: none;
+    color: white;
+}
+
+.rules-subtitulo-1{
+    font-size: 2.5rem;
+    text-decoration: underline;
+    font-family: 'Courier New', Courier, monospace;
+}
+.rules-subtitulo-2{
+    font-size: 2rem;
+    font-weight: 900;
+    text-shadow: 0em 0em 0.2em rgb(235, 138, 138);
+}
+.rules-text{
+    font-size: 1.3rem;
+}
+
+h1{
+    position: relative;
+    left: 4vw;
+    font-family: anton;
+    padding: 0 1rem;
+    font-size: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    display: inline-block;
+    -webkit-text-stroke: 1px rgb(122, 14, 14);
+    text-shadow: 0em 0em 0.2em orange;
+}
+
+#mdhl-rules{
+    font-family: anton;
+    -webkit-text-stroke: 1px rgba(255, 166, 0, 0.678);
+    font-size: 5rem;
+    text-shadow: orange 0em 0em .2em ;
+}
+
+.contact{
+    font-size: 3rem;
+    font-family: saira;
+    font-weight: 400;
+    color: aliceblue;
+}
+#mail{
+    color: orange;
+    text-shadow: 0em 0em 0.2em orange,0em 0em 0.2em orange;
+}
+#mail:hover{
+    color: white;
+    text-shadow: 0em 0em 0.2em white,0em 0em 0.2em white;
+}
+
+.about-subtitulo{
+    font-size: 2rem;
+    font-weight: 900;
+    text-decoration: underline;
+}
+.about-text{
+    font-size: 2rem;
+    max-width: 30vw;
+}
+
+#mision{
+    display: flex;
+    border: 1px solid black;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 40px 0px black;
+    background-color: rgba(255, 255, 255, 0.151);
+    color: aliceblue;
+}
+#mision:hover{
+    box-shadow: 0 0 40px 0 orange;
+}
+#vision{
+    display: flex;
+    color: aliceblue;
+    flex-direction: row-reverse;
+    border: 1px solid black;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 40px 0px black;
+    background-color: rgba(255, 255, 255, 0.151);
+}
+#vision:hover{
+    box-shadow: 0 0 40px 0 orange;
+}
+#general-information{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 40px 0px black;
+    background-color: rgba(255, 255, 255, 0.151);
+    color: aliceblue;
+}
+#general-information:hover{
+    box-shadow: 0 0 40px 0 orange;
+}
+
+ol,ul{
+    font-size: 1.3rem;
+}
+dl > dd ul{
+    padding-left: 4rem;
+}
+li > ol {
+    padding-left: 3rem;
+}
+li::marker{
+    font-size: 1.6rem;
+    text-shadow: 0em 0em 0.2em rgb(235, 138, 138),0em 0em 0.2em rgb(235, 138, 138),0em 0em 0.2em rgb(235, 138, 138);
+}
+
+table{
+    border-collapse: collapse;
+    min-width: 70vw;
+    min-height: 30vh;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+thead{
+    background-color: black;
+    color: white;
+
+}
+table,tr,th,td{
+    text-align: center;
+}
+tr{
+    padding: -6rem;
+}
+caption{
+    background-color: rgba(255, 255, 255, 0.151);
+    color: white;
+    text-shadow: .07em .07em 0em black;
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: saira;
+    border: 2px solid black;
+}
+caption p{
+    text-shadow: 0em 0em .3em orange,0em 0em .2em orange;
+    font-size: 2rem;
+    font-style: italic;
+    text-decoration: underline;
+}
+thead>tr>th{
+    text-align: center;
+}
+.schedule-date{
+    background-color: rgb(66, 18, 18);
+    color: white;
+    border-bottom: 1px solid black;
+    text-shadow: none;
+}
+#schedule-date-last{
+    border: none;
+}
+tbody{
+    background-color: rgb(168, 162, 162);
+    border: 2px solid;
+}
+tbody>tr:hover{
+    background-color: rgb(59, 46, 46);
+    color: white;
+    text-shadow: 0em 0em .3em orange,0em 0em .2em orange;
+}
+tbody tr:nth-child(2n){
+    background-color: rgba(255, 255, 255, 0.151);
+}
+tbody tr:nth-child(2n):hover{
+    background-color: rgb(59, 46, 46);
+    color: white;
+    text-shadow: 0em 0em .3em orange,0em 0em .2em orange;
+}
+#texto-gameInfo{
+    font-size: 1.3rem;
+    position: relative; top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    color: white;
+    gap: 1.5rem;
+}
+#texto-gameInfo p b{
+    font-size: 1.5rem;
+    text-shadow: 0em 0em .2em orange,0em 0em .2em orange,0em 0em .2em orange;
+}
+#contact-schedule{
+    display: flex;
+    gap: 50rem;
+    text-decoration: underline;
+}
+
+.h3-about{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#p-subtitulo-about{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+#contact-us{
+    display: flex;
+    color: aliceblue;
+    position: relative;
+    top: -5vh;
+    font-size: 6rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    text-shadow: 0em 0em .1em orange,0em 0em .1em orange,0em 0em .4em orange;
+}
+#contact-us:hover{
+    text-shadow: 0em 0em .1em white,0em 0em .1em white,0em 0em .4em white;
+}
+
+fieldset{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    min-width: 70vw;
+    min-height: 5vh;
+    background-color: rgb(66, 18, 18);
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: 3px solid double black;
+    font-family: 'Courier New', Courier, monospace;
+}
+label, label>b{
+    text-shadow: 0em 0em .1em orange,0em 0em .1em orange,0em 0em .4em orange;
+}
+input{
+    border: none;
+    border-bottom: 2px solid orange;
+    background-color: rgb(66, 18, 18);
+    color: aliceblue;
+}
+#fieldset-1{
+    gap: 3rem;
+    display: flex;
+    align-items: center;
+}
+#fieldset-1 input{
+    min-width: 15vw;
+}
+#fieldset-2 input{
+    min-width: 20vw;
+}
+#fieldset-3{
+    display: flex;
+    left: 1rem;
+    gap: 3rem;
+    flex-grow: 1;
+}
+#fieldset-5{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 7vh;
+    gap: 1rem;
+}
+#fieldset-5>div{
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+#fieldset-5>p{
+    text-shadow: 0em 0em .1em white,0em 0em .1em white,0em 0em .2em white;
+}
+#fieldset-6{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 7vh;
+    gap: 1rem;
+}
+#fieldset-6>div{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+#fieldset-6>p{
+    text-shadow: 0em 0em .1em white,0em 0em .1em white,0em 0em .2em white;
+}
+#fieldset-7{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    min-height: 7vh;
+    gap: 1rem;
+}
+#fieldset-7>div{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+#fieldset-7>div>select{
+    background-color: rgb(122, 14, 14);
+    color: aliceblue;
+}
+#fieldset-7>div>select option{
+    background-color: rgb(66, 18, 18);
+    color: aliceblue;
+    border: 1px solid black;
+}
+#fieldset-8{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 7vh;
+    gap: 1rem;
+}
+#fieldset-8>div{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+#fieldset-9{
+    display: flex;
+    flex-direction: column;
+    min-height: 15vh;
+    align-items: flex-start;
+    gap: 1rem;
+}
+#fieldset-10{
+    min-height: 23vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#fieldset-11{
+    gap: 6rem;
+}
+#fieldset-12{
+    gap: 6rem;
+}
+#fieldset-12>input{
+    gap: 6rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: rgb(66, 18, 18);
+    text-shadow: 0em 0em .1em orange,0em 0em .1em orange,0em 0em .4em orange;
+    border: 2px solid orange;
+    border-radius: 1rem;
+    padding: .5rem;
+}
+#fieldset-12>input:hover{
+    background-color: rgb(150, 20, 20);
+}
+#parent{
+    background-color: rgb(66, 18, 18);
+    min-width: 15vw;
+}
+#registration-form{
+    font-size: 4rem;
+    color: white;
+    text-shadow: 0em 0em .2em white,0em 0em .2em white;
+    font-family: 'Courier New', Courier, monospace;
+}
+fieldset h3{
+    text-shadow: 0em 0em .1em white
+}
+legend{
+    font-size: 2rem;
+    font-weight: 900;
+    text-shadow: 0em 0em .2em orange,0em 0em .2em orange;
+}
+
+/* MEDIA QUERIES
+@media screen and (){
+    nav{
+        display: flex;
+        width: 14rem;
+        flex-direction: column;
+        background-color: black;
+        position: sticky;
+        top: 1rem;
+    }
+    nav a{
+        font-size: 1.2rem;
+        color: white;
+        background-color: rgb(66, 18, 18);
+        padding: 1em;
+        text-decoration: none;
+        font-family: saira;
+        font-size: 1.2rem;
+        text-shadow: 1em 1em 20em 0em white;
+    }
+    nav a:hover{
+        background-color: rgb(54, 8, 8);
+    }
+    nav a[href="#"]{
+        background-color: rgb(54, 8, 8);
+        text-shadow: 0em 0em .2em orange,0em 0em .8em orange;
+    }
+    .nav-text{
+        display: flex;
+    }
+} */
